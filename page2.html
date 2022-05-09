@@ -5,55 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif; color: aliceblue;} 
-    body { background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
-    ul { list-style-type: none; margin: 0; padding: 1; color: aliceblue; font-family: sans-serif; font-size:25px;}
-    html, body{
-        height: 100%
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Brush Script MT", sans-serif} 
+
+
+    body {   
+            background-repeat: no-repeat; 
+            background-attachment:fixed; 
+            background-size: cover; 
+            height: 100%
+         }
+
+    ul { list-style-type: none; 
+           margin: 0; 
+           padding: 1; 
+            color: aliceblue;
+           font-family: sans-serif; 
+          font-size: 25px; 
+          z-index: 3;
+       }
+
+    body, h1{ 
+        position:sticky;
+        top: 200px;
     }
-    #container {
-        min-height: 100%
-    }
-    #main {
-        overflow: auto;
-        padding-bottom: 100px;
-    }
-    #footer {
+
+    
+    footer {
        
-        position: relative; 
+        position: static center; 
         height: 100px; 
-        margin-top: -100px; 
+        margin-top: 200px; 
         clear: both; 
     }
-    footer{text-align: center}
+
+footer{text-align: center}
+
+nav{ 
+  background: #bdc6bc95;
+  width: 100%;
+  position:absolute;
+}
+
+nav ul{
+  float: right; 
+  margin-right: 20px; 
+
+}
+
+nav ul li{
+  display: inline-block; 
+  line-height: 80px;
+  margin: auto;
+}
+
+nav ul li a{
+  color: white; 
+  font-size: 25px;  
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Brush Script MT";
+}
+
+a.active,a:hover{
+  background: #2110b7c5;
+  transition: .5s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.773);
+ 
+}
+
+label.logo{
+  color: White;
+  font-size: 34px;
+  line-height: 80px; 
+  padding: 0 100px;
+  font-weight: bold; 
+}
+
+.card1 img {
+    object-fit:scale-down;
+    margin-top: 1%;
+   
+}
 </style>
 </head>
  
 
-<!--setting the color for the entire webpage -->
-<body bgcolor="black">                                                                 
+<!--setting the wallpaper for the entire webpage -->
+<body background="/images/WB 2.jpg" >                                                                 
  
 <!--This is the title of the website-->
  
- <header> <h1 style="font-size:80px;">Adoption</h1>  </header>
+ <header> <h1 style="font-size: 50px; color: white">Find your next Best Friend</h1>  </header>
     
  <!--This div container is used to wrap all of the text and tabs together-->
    
 <div id="container">
  <!-- how to style your title of the website page-->
  <style>
-      h1{text-align: center;}
+      h1{text-align:center;}
   </style>
  <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li><br>
-        <li><a href="page2.html">Adopt-a-Pup</a></li><br>
+    
+      <ul> <!--this formats the navigation bar, we now have links!-->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Adopt-a-Pup</a></li>
         <li><a href="page3.html">Gallery</a></li>
-    </ul>
-</nav> <!-- this will end the navigation tabs area-->
-     
-     
+      </ul>
+
+</nav> 
+
+<div class="cards">
+            
+     <article class="card1" >
+        <header>
+            <h3 style="color:aliceblue; font-size: 45px; padding-top: 7%;">Clover</h2>
+        </header>    
+        <img src="/images/Clover.jpg" alt="Tan colored large dog">
+        <div class="content">
+            <p style="color:aliceblue; font-size: 28px; font-family:'Courier New', Courier, monospace">Age: 3 / Sex: Male / Temperament: Energetic
+            </p>
+        </div>
+        
+    </article>
+            
+    <article class="card">
+        <header>
+            <h2 style="color:aliceblue; font-size: 45px;">Kaya</h2>
+        </header>
+        <img src="/images/Kaya.jpg" alt="light brown colored large dog">
+        <div class="content">
+            <p style="color:aliceblue; font-size: 28px; font-family:'Courier New', Courier, monospace">Age: 4 / Sex: Female / Temperament: Stoic & Calm</p>
+        </div>
+        
+    </article>
+    <article class="card">
+        <header>
+            <h2 style="color:aliceblue; font-size: 45px;">Mickey</h2>
+        </header>
+        <img src="/images/Mickey.jpg" alt="Chocolate colored medium dog">
+        <div class="content">
+            <p style="color:aliceblue; font-size: 28px; font-family:'Courier New', Courier, monospace">Age: 2 / Sex: Male / Temperament: Loving</p>
+        </div>
+
+    </article>
 </div>
+            
+    
 
 </body>
 
@@ -61,11 +162,24 @@
 
 
 
-
-
-
-
-<footer id="footer">
+<footer id="footer" style="color: white; font-size: 25px" >
     &copy; Copyright 2022
+  
+  </footer>
 
-</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
