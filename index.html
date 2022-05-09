@@ -6,14 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif} 
-    body { background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}
-    ul { list-style-type: none; margin: 0; padding: 1; color: aliceblue; font-family: sans-serif; font-size:25px; z-index: 2;}
+
+
+    body {   
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-size: cover; 
+            background: linear-gradient(rgba(0, 0, 0, 0.633),rgba(0, 0, 0, 0.89));
+          
+          }
+
+    ul { list-style-type: none; 
+           margin: 0; 
+           padding: 1; 
+            color: aliceblue;
+           font-family: sans-serif; 
+          font-size:25px; 
+          z-index: 2;
+      }
+
+    html, body{
+        height: 100%
+    }
+    #container {
+        min-height: 100%
+    }
+    #main {
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+    #footer {
+       
+        position: relative; 
+        height: 100px; 
+        margin-top: -100px; 
+        clear: both; 
+    }
+footer{text-align: center}
+
+nav{
+  background: #ebaf38;
+  height: 80px; 
+  width: 100%;
+
+}
+label.logo{
+  color: White;
+  font-size: 34px;
+  line-height: 80px; 
+  padding: 0 100px;
+  font-weight: bold; 
+}
+nav ul{
+  float: right; 
+  margin-right: 20px; 
+
+}
+nav ul li{
+  display: inline-block; 
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white; 
+  font-size: 17px;  
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+
 </style>
 </head>
  
 
-<!--setting the color for the entire webpage -->
-<body background="/images/WB.jpg">                                                                 
+<!--setting the wallpaper for the entire webpage -->
+<body background="/images/WB.jpg" >                                                                 
  
 <!--This is the title of the website-->
  
@@ -27,30 +101,34 @@
       h1{text-align: center;}
   </style>
  <nav>
-  <ul>
-      <li><a href=index.html></a>Home</li><br>
-      <li><a href=page2.html></a>Adopt-a-Pup</li><br>
-      <li><a href=page3.html></a>Gallery</li>
-  </ul>
+    
+
+      <ul> <!--this formats the navigation bar, we now have links!-->
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="page2.html">Adopt-a-Pup</a></li>
+        <li><a href="page3.html">Gallery</a></li>
+      </ul>
 </nav> <!-- this will end the navigation tabs area-->
-
-     
-     
-     
-     
-     
-
-
-        </body>
-
-
 </div>
 
+<h1 class="logo">/h1></h1>
 
 
 
 
 
-<footer>&copy; Copyright 2022
+
+</body>
+
+
+
+
+
+
+
+
+
+<footer id="footer">
+  &copy; Copyright 2022
 
 </footer>
