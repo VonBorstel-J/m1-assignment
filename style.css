@@ -1,0 +1,231 @@
+body,h1,h2,h3,h4,h5,h6 {font-family:"Brush Script MT", sans-serif} 
+
+
+    body {   
+            background-repeat: no-repeat; 
+            background-attachment:fixed; 
+            background-size:cover;
+         }
+    ul { list-style-type: none; 
+          margin: -100px; 
+          padding: 1; 
+          color: aliceblue;
+          font-family: sans-serif; 
+          font-size:25px; 
+          z-index: 2;
+      }
+
+    html, body{
+        height: 100%
+    }
+
+
+    #container {
+        min-height: 100%
+    }
+
+    #main {
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+
+    #footer {
+      position: absolute center; 
+        height: 100px; 
+        margin-top: 700px; 
+        clear: both; 
+    }
+footer{text-align: center}
+
+
+label.logo{
+  color: White;
+  font-size: 34px;
+  line-height: 80px; 
+  padding: 0 100px;
+  font-weight: bold; 
+}
+
+nav{ 
+    background: #bdc6bc95;
+    width: 100%;
+    position:absolute;
+    }
+    
+
+nav ul{
+  float: right; 
+  margin-right: 20px; 
+}
+
+/* making sure the code is to the right and lined up from left to right */
+
+nav ul li{
+  display: inline-block; 
+  line-height: 80px;
+  margin: auto;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 25px;  
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Brush Script MT";
+}
+
+a.active,a:hover{
+  background: #2110b7c5;
+  transition: .5s;
+}
+
+/* Page 2 styling */
+
+ul { list-style-type: none; 
+       margin: 0; 
+       padding: 1; 
+        color: aliceblue;
+       font-family: sans-serif; 
+      font-size: 25px; 
+      z-index: 3;
+   }
+
+body, h1{ 
+    position:sticky;
+    top: 200px;
+}
+
+
+
+/* Gallery styling */ 
+
+.container { 
+    max-width:max-content;
+    margin: 0 auto; 
+}
+
+
+    #gallery { 
+        display: grid;
+        image-rendering: optimizeQuality;
+        row-gap: 10%;
+        padding-top: 150px;
+        padding-left: 150px;
+        margin: 10px;
+        grid-template-columns: 30% 25% 25% 25%;
+        
+    }
+
+
+        .galleryImg { 
+            max-width: 45%;
+            border-radius: 10px;
+            position: relative; 
+            transition: transform 250ms;
+            cursor: pointer;
+            image-rendering: optimizeQuality;
+        }
+
+                .galleryImg:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 3px 3px 10px black;
+                }
+
+                        #popup {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            right: 0; 
+                            bottom: 0;
+                            background-color: rgba(0,0,0, 0.85);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transform: translateY(-100%);
+                            transition: 250ms transform;
+                            padding: 50px;
+                        }
+
+                            #selectedImage {
+                                width: 50%; 
+                                height: 85%;  
+                            }
+
+
+                            #footer2 {
+                                height: 1px; 
+                                margin-top: 100px; 
+                                padding-top: 100px;
+                            }
+
+                /* Form styling */ 
+
+                         
+                     
+                            #container {
+                                min-height: 10%
+                            }
+                            
+                            #main {
+                                overflow: auto;
+                                padding-bottom: 100px;
+                            }
+                            
+
+                            
+                            footer {text-align: center}
+                            
+                            
+                            .logo img {
+                                width: 150px;
+                                float: left;
+                                padding-left: 5%; 
+                                padding-right: 2; 
+                                filter: invert(1);
+                            } 
+                            
+                            form {
+                                position:absolute; left: 465px; top: 220px; 
+                                width: 777px;
+                            }
+                                
+                            
+                            
+                            
+                            
+                            label {
+                                color:aliceblue;
+                                display:block;
+                                margin: 15px 0 0 0;
+                                font-size: 25px;
+                            }
+                            
+                                        input {
+                                             width:300px
+                                        }
+                            
+                                            input[type="radio"] {
+                                                width: 25px;
+                                        
+                                               
+                                            }
+                            
+                                                textarea{
+                                                    width: 700px;
+                                                }
+                            
+                                                    input[type="submit"] {
+                                                        display:block;
+                                                        margin: 20px 0 10px 0; 
+                                                        width: 100px; 
+                                                    }
+                            
+                                                               fieldset, legend, label {
+                                                                color: aliceblue;
+                                                            }
+                            
+                                                                legend {
+                                                                    font-size: 35px;
+                                                                }
+                                                                

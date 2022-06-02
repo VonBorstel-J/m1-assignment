@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="galleryscript.js"></script>
 </head>
  
 
@@ -32,43 +33,29 @@
 
 </nav> 
 
-<div class="cards">
-            
-     <article class="card1" >
-        <header>
-            <h3 style="color:aliceblue; font-size: 45px; padding-top: 7%;">Clover</h2>
-        </header>    
-        <img src="/images/Clover.jpg" alt="Tan colored large dog">
-        <div class="content">
-            <p style="color:aliceblue; font-size: 28px; font-family:'Courier New', Courier, monospace">Age: 3 / Sex: Male / Temperament: Energetic
-            </p>
-        </div>
-        
-    </article>
-            
-    <article class="card">
-        <header>
-            <h2 style="color:aliceblue; font-size: 45px;">Kaya</h2>
-        </header>
-        <img src="/images/Kaya.jpg" alt="light brown colored large dog">
-        <div class="content">
-            <p style="color:aliceblue; font-size: 28px; font-family:'Courier New', Courier, monospace">Age: 4 / Sex: Female / Temperament: Stoic & Calm</p>
-        </div>
-        
-    </article>
-    <article class="card">
-        <header>
-            <h2 style="color:aliceblue; font-size: 45px;">Mickey</h2>
-        </header>
-        <img src="/images/Mickey.jpg" alt="Chocolate colored medium dog">
-        <div class="content">
-            <p style="color:aliceblue; font-size: 28px; font-family:'Courier New', Courier, monospace">Age: 2 / Sex: Male / Temperament: Loving</p>
-        </div>
 
-    </article>
-</div>
-            
-    
+    <div>
+        <div id="gallery"></div>
+        
+        <!--popup image-->
+        <div id="popup">
+            <img src="" alt="" id="selectedImage">
+        </div>
+        </div>
+        
+        <div class="infobox" id="infobox">
+            <div class="infobox-header">
+                <div class="title"></div>
+                <button class="close-button">&times;</button>
+            </div> 
+             <div class="infobox-body">
+        
+            </div>
+        </div>
+        
+    </div>     
+        
+   
 
 </body>
 
@@ -76,7 +63,7 @@
 
 
 
-<footer id="footer" style="color: white; font-size: 25px" >
+<footer id="footer2" style="color: white; font-size: 25px" >
     &copy; Copyright 2022
   
   </footer>
