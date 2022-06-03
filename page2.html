@@ -42,20 +42,23 @@
             <img src="" alt="" id="selectedImage">
         </div>
         </div>
+
+
+
+        <a href="javascript:hideshow(document.getElementById('adiv'))">Click here</a>
+
+        <script type="text/javascript">
+        function hideshow(which){
+        if (!document.getElementById)
+        return
+        if (which.style.display=="block")
+        which.style.display="none"
+        else
+        which.style.display="block"
+        }
+        </script>
         
-        <div class="infobox" id="infobox">
-            <div class="infobox-header">
-                <div class="title"></div>
-                <button class="close-button">&times;</button>
-            </div> 
-             <div class="infobox-body">
-        
-            </div>
-        </div>
-        
-    </div>     
-        
-   
+        <div id="adiv" style="font:24px bold; display: block">Now you see me</div>
 
 </body>
 
