@@ -25,13 +25,13 @@
   </style>
  <nav>
     
-
-      <ul> <!--this formats the navigation bar, we now have links!-->
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page2.html">Adopt-a-Pup</a></li>
-        <li><a href="page3.html">Contact</a></li>
-      </ul>
-</nav> <!-- this will end the navigation tabs area-->
+    <nav>
+        <ul> <!--this formats the navigation bar, we now have links!-->
+          <li><a  href="home.html">Home</a></li>
+          <li><a href="adopt.html">Adopt-a-Pup</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+  </nav> <!-- this will end the navigation tabs area-->
 
 </div>
 <form action="/signup"  method="post">
@@ -43,6 +43,11 @@
               <label>Enter your fullname</label>
                   <input type="text" name="name">
                   
+                        
+              <label>Select your gender</label>
+              <input  type="radio" name="gender" value="male"/><span>Male</span>
+              <input  type="radio" name="gender"  value="female"/><span>Female</span>
+          
                   <label for="contact-select">Choice of Contact</label>
 
                   <select  id="contactSelect">
@@ -56,16 +61,6 @@
               
               <!-- <label id= textbox2>Enter your phone</label>
                   <input type="text" name="phone"> -->
-              
-              <label>Select your gender</label>
-                  <input  type="radio" name="gender" value="male"/><span>Male</span>
-                  <input  type="radio" name="gender"  value="female"/><span>Female</span>
-              
-              <label>How should we contact you?</label>
-                  <select>
-                          <option>Email</option>
-                          <option>Phone</option>
-                  </select>
 
               <label>Tell us about yourself & why you'd like a dog:</label>
                   <textarea rows="5" cols="30"></textarea>
@@ -78,7 +73,7 @@
 </body>
 
 
-<script src="contact.js"></script>
+<script src="/js/contact.js"></script>
 
 
 
