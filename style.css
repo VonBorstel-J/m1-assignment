@@ -114,7 +114,7 @@ body, h1{
         padding-left: 150px;
         margin: 10px;
         grid-template-columns: 30% 25% 25% 25%;
-        
+        column
     }
 
 
@@ -128,8 +128,8 @@ body, h1{
         }
 
                 .galleryImg:hover {
-                    transform: translateY(-2px);
-                    box-shadow: 3px 3px 10px black;
+                    transform: translateY(-5px);
+                    box-shadow: 3px 3px 10px rgb(0, 0, 0);
                 }
 
                         #popup {
@@ -148,9 +148,10 @@ body, h1{
                         }
 
                             #selectedImage {
-                                padding-bottom: 350px;
+                                padding-bottom: 200px;
                                 width: 40%; 
                                 height: 80%;  
+                                border-radius: 10px;
                             }
 
 

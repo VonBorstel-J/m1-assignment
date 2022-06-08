@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
  
 
@@ -41,12 +42,20 @@
 
               <label>Enter your fullname</label>
                   <input type="text" name="name">
+                  
+                  <label for="contact-select">Choice of Contact</label>
 
-              <label>Enter your email</label>
-                 <input type="text" name="email">
+                  <select  id="contactSelect">
+                      <option value="">--Please choose an option--</option>
+                      <option value="email">Email</option>
+                      <option value="phone">Phone</option>
+                  </select>
+
+              <!-- <label id= textbox1>Enter your email</label>
+                 <input type="text" name="email">-->
               
-              <label>Enter your phone</label>
-                  <input type="text" name="phone">
+              <!-- <label id= textbox2>Enter your phone</label>
+                  <input type="text" name="phone"> -->
               
               <label>Select your gender</label>
                   <input  type="radio" name="gender" value="male"/><span>Male</span>
@@ -69,7 +78,7 @@
 </body>
 
 
-
+<script src="contact.js"></script>
 
 
 
